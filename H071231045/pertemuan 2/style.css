@@ -1,0 +1,270 @@
+body {
+    font-family: sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+a {
+    font-family: sans-serif;
+    color: rgb(243, 235, 235);
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar {
+    display: flex;
+    position: fixed;
+    background-color: rgb(48, 3, 90);
+    width: 100%;
+    height: 70px;
+    top: 0px;
+    justify-content: center;
+    z-index: 1;
+}
+.item-nav {
+    text-decoration: none;
+    padding: 15px;
+    margin: 5px 0;
+}
+.item-nav:hover {
+    background-color: rgb(45, 1, 57);
+    border-radius: 10px;
+}
+.player {
+    display: flex;
+    background-color: rgb(204, 204, 204);
+}
+
+.intro {
+    margin-top: 200px;
+    margin-left: 150px;
+}
+.intro h3 {
+    font-size: 20px;
+}
+.intro h1{
+    font-size: 45px;
+} 
+.intro p {
+    font-size: 14px;
+}
+.image img {
+    height: 550px;
+    width: 450px;
+    margin-top: 120px;
+    margin-left: 200px;
+}
+.about {
+    display: flex;
+    font-size: 15px;
+}
+.about-left {
+    margin-top: 60px;
+    margin-left: 110px;
+    text-align: justify;
+}
+.about-right {
+    margin-top: 108px;
+    margin-left: 30px;
+    margin-right: 110px;
+    text-align: justify;
+}
+.galerry {
+    background-color: rgb(215, 215, 215);
+    padding-top: 40px;
+    margin-top: 40px;
+    /* margin-bottom: 150px; */
+    /* overflow: hidden; */
+}
+
+#posgaleri {
+    margin-left: 150px;
+    margin-top: 100px;
+    font-size: 25px;
+}
+
+.batas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    border-radius: 10px;
+    gap: 10px;
+    margin-left: 150px;
+    margin-right: 90px;
+    margin-top: 0px;
+}
+.item {
+    display: grid;
+    justify-content: center;  /* horisontal */
+    align-items: center;
+    width: 335px;
+    height: 335px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.item img {
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+    /* display: block; */
+    border-radius: 4px;
+    transition: transform 1500ms;
+}
+.item img:hover{
+    transform: scale(1.2);
+}
+footer {
+    display: flex;
+    background-color: #2b2b2b; /* Warna latar belakang */
+    color: white; /* Warna teks */
+    text-align: center; 
+    padding: 20px 0; /* Padding atas dan bawah */
+    width: 100%;
+    bottom: 0;
+
+}
+footer img {
+    height: 70px;
+    width: 70px;
+}
+footer a {
+    color: #ffffff; 
+    text-decoration: none; 
+}
+footer a:hover {
+    text-decoration: underline; 
+}
+.sosmed {
+    margin-left: 570px;
+    margin-top: 0px;
+    display: flex;
+    font-size: 13px;
+}
+.club {
+    display: flex;
+    font-size: 18px;
+    font-family: sans-serif;
+    margin-left: 150px;
+}
+.club img {
+    width: 60px;
+    height: 50px;
+}
+
+@media (max-width: 1100px) {
+    .navbar {
+        height: auto;
+    }
+
+    .player {
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+    }
+
+    .image {
+        order: 1; /* Gambar di atas */
+        margin-left: 20px;
+        margin-top: 0px;
+        margin-right: 10px;
+
+    }
+    .intro {
+        order: 2; 
+        margin-left: 20px;
+        margin-top: 20px;
+        margin-right: 10px;
+        text-align: left;
+    }
+    .about {
+        flex-direction: column;
+    }
+
+    .about-left {
+        justify-content: center;
+        margin-right: 10px;
+        margin-left: 20px;
+    }
+    
+    .about-right {
+        margin-top: -10px;
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+    
+    .batas {
+        grid-template-columns: repeat(2, 1fr); /* 2 gambar per baris */
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 10px;
+    }
+
+    footer {
+        flex-direction: column;
+        margin-top: 170px;
+    }
+
+    .sosmed, .club {
+        margin-left: 0;
+        margin-right: 10px;
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+}
+@media (max-width: 600px) {
+    .batas {
+        grid-template-columns: repeat(1, 1fr); /* 1 gambar per baris */
+        margin-right: 100px;
+    }
+
+    footer {
+        flex-direction: column;
+        margin-top: 170px;
+    }
+
+    .sosmed, .club {
+        margin-left: 0;
+        margin-right: 10px;
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    #hadua {
+        margin-top: -10px;
+        margin-left: 20px;
+    }
+    .navbar {
+        height: auto;
+    }
+    .player {
+        flex-direction: column;
+    }
+    .image {
+        order: 1; /* Gambar di atas */
+        margin-left: 20px;
+        margin-top: 0px;
+        margin-right: 100px;
+    }
+    .intro {
+        order: 2; 
+        margin-left: 20px;
+        margin-top: 20px;
+        margin-right: 10px;
+        text-align: left;
+    }
+    .about {
+        flex-direction: column;
+    }
+    .about-left {
+        justify-content: center;
+        margin-right: 10px;
+        margin-left: 20px;
+    }
+    .about-right {
+        margin-top: -10px;
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+}
+
