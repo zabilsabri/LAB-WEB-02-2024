@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Saksikan perjuangan manusia melawan Titan dalam anime epik Attack on Titan. Pertempuran yang mendebarkan dengan animasi yang memukau!">
+    <title>Attack on Titan</title>
+    <link rel="icon" href="img/Freedom Wings.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <style>   
+        .nav-link:hover {
+            text-decoration: underline;
+        }
+
+        .dropdown-item:hover {
+            background-color: #343a40;
+            color: white; 
+        }
+
+        #hero {
+            background-image: url('img/backgroundaot.jpg'); /* Ganti dengan gambar Attack on Titan */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+
+        #hero-overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        #hero-content {
+            position: relative;
+            z-index: 1; 
+        }
+
+        .hero-title {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            animation: fadeIn 1s ease-out forwards;
+        }
+
+        .hero-description {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            animation: fadeIn 1.5s ease-out forwards;
+        }
+        .carousel-item img {
+            width: 100%; 
+            height: 250px; 
+            object-fit: cover; 
+            border-radius: 10px; 
+        }
+
+        footer a {
+            text-decoration: none; 
+            margin: 0 10px; 
+            display: inline-block; 
+            vertical-align: middle; 
+        }
+
+        @media (max-width: 768px) {
+            .hero-title {
+            font-size: 2.5rem; 
+            }
+            .hero-description {
+            font-size: 1rem;
+            }
+        }
+
+        .btn-cta {
+            padding: 10px 30px;
+            background-color: #dc3545;
+            color: white;
+            border-radius: 5px;
+            text-transform: uppercase;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            animation: fadeIn 2s ease-out forwards;
+        }
+
+        .btn-cta:hover {
+            background-color: #c82333; 
+            transform: scale(1.05); 
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
+        }
+
+        @keyframes fadeIn {
+            0% {
+            opacity: 0;
+            transform: translateY(-20px);
+            }
+            100% {
+            opacity: 1;
+            transform: translateY(0);
+            }
+        }
+    </style>
+  </head>
+  <body data-bs-spy="scroll" data-bs-target="#navbarNavDropdown" data-bs-offset="70" tabindex="0">
+    <!-- NAVBAR Section -->
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand ms-3" href="#"> 
+              <img src="img/AttackOnTitan.png" alt="Logo" class="d-inline-block align-text-top" style="height: auto; max-width: 100px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav ms-auto me-3">
+                <li class="nav-item"><a class="nav-link text-white" aria-current="page" href="#about">Tentang</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#character">Karakter</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Daftar Season</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Season 1</a></li>
+                      <li><a class="dropdown-item" href="#">Season 2</a></li>
+                      <li><a class="dropdown-item" href="#">Season 3</a></li>
+                      <li><a class="dropdown-item" href="#">Season 4</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link text-white" href="#features">Fitur</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#testimoni">Testimoni</a></li>
+              </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- ABOUT Section -->
+    <section id="hero">
+      <div id="hero-overlay"></div>
+      <div id="hero-content" class="text-white">
+        <h1 class="hero-title fw-bold">Attack on Titan</h1>
+        <p class="hero-description">Bergabunglah dalam pertempuran epik melawan para Titan dan pertahankan umat manusia!</p>
+        <a href="https://www.crunchyroll.com/series/GR751KNZY/attack-on-titan" class="btn btn-cta" aria-label="Tonton Attack on Titan" target="_blank">
+          <i class="bi bi-play-fill"></i> Tonton Sekarang
+        </a>
+      </div>
+    </section>
+
+    <section id="about" class="py-5 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 mb-4">
+            <h2 class="mb-4">Tentang Attack on Titan</h2>
+            <p>
+              <strong>Attack on Titan</strong> (Shingeki no Kyojin) adalah anime epik yang menceritakan tentang umat manusia yang bertahan hidup di dalam dinding dari ancaman para Titan—makhluk raksasa pemangsa manusia. Mengikuti perjalanan Eren Yeager dan teman-temannya, anime ini penuh dengan aksi mendebarkan, plot twist yang menegangkan, serta pertanyaan filosofis tentang kebebasan dan kemanusiaan.
+            </p>
+            <p>
+              Dengan animasi memukau dan cerita yang emosional, Attack on Titan telah menjadi salah satu anime terbaik sepanjang masa. Saksikan perjuangan umat manusia di dunia yang penuh bahaya dan misteri!
+            </p>
+            <a href="#features" class="btn btn-dark mt-3">Pelajari Lebih Lanjut</a>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="ratio ratio-16x9 rounded" style="overflow: hidden;"> <!-- Sudut melengkung dengan "rounded" -->
+              <iframe src="https://www.youtube.com/embed/MGRm4IzK1SQ" title="Attack on Titan Trailer" allowfullscreen style="border-radius: inherit;"></iframe>
+            </div>
+          </div>      
+        </div>
+      </div>
+    </section>
+  
+    <!-- CHARACTER Section -->
+    <section id="character" class="py-5 bg-secondary text-white">
+        <div class="container">
+        <h2 class="text-center mb-4">Karakter Utama</h2>
+        
+        <div id="characterCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row justify-content-center">
+                <div class="col-12 col-sm-6 col-md-3 text-center">
+                    <img src="img/Character/Eren.jpg">
+                    <h4>Eren Yeager</h4>
+                    <p>Protagonis utama yang bertekad menghancurkan para Titan setelah kehilangan keluarganya.</p>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 text-center">
+                    <img src="img/Character/Mikasa Ackerman.jpg" class="img-fluid mb-3" alt="Mikasa Ackerman">
+                    <h4>Mikasa Ackerman</h4>
+                    <p>Seorang pejuang kuat dan sahabat Eren yang selalu melindunginya.</p>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 text-center">
+                    <img src="img/Character/Armin.jpg" class="img-fluid mb-3" alt="Armin Arlert">
+                    <h4>Armin Arlert</h4>
+                    <p>Strategis yang cerdas dan sahabat masa kecil Eren dan Mikasa.</p>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 text-center">
+                    <img src="img/Character/Levi.jpg" class="img-fluid mb-3" alt="Levi Ackerman">
+                    <h4>Levi Ackerman</h4>
+                    <p>Kaptain Pasukan Pengintai yang dikenal sebagai pejuang terkuat melawan para Titan.</p>
+                </div>
+                </div>
+            </div>
+            
+            <div class="carousel-item">
+                <div class="row justify-content-center">
+                <div class="col-12 col-sm-6 col-md-3 text-center">
+                    <img src="https://i.pinimg.com/474x/ee/64/5c/ee645cbc7e4c5b28b7d4072b0ad6f17b.jpg" class="img-fluid mb-3" alt="Historia Reiss">
+                    <h4>Historia Reiss</h4>
+                    <p>Pewaris takhta kerajaan yang memiliki rahasia besar di balik asal-usul Titan.</p>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 text-center">
+                    <img src="https://th.bing.com/th/id/OIP.ru9lwA0f93emJMxJcy4CygHaHa?w=164&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" class="img-fluid mb-3" alt="Erwin Smith">
+                    <h4>Erwin Smith</h4>
+                    <p>Komandan Pasukan Pengintai yang tegas dan berwibawa, selalu memimpin dengan visi besar.</p>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 text-center">
+                    <img src="https://i.pinimg.com/474x/bc/c8/c0/bcc8c08087e5ab84cfb2e3629a4da698.jpg" class="img-fluid mb-3" alt="Reiner Braun">
+                    <h4>Reiner Braun</h4>
+                    <p>Prajurit tangguh dengan masa lalu yang penuh rahasia sebagai Titan Lapis Baja.</p>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 text-center">
+                    <img src="https://i.pinimg.com/474x/ed/59/78/ed5978bd08c3024be93e2fd72d39e291.jpg" class="img-fluid mb-3" alt="Zeke Yeager">
+                    <h4>Zeke Yeager</h4>
+                    <p>Titan Binatang yang cerdas dan memiliki keterkaitan erat dengan Eren.</p>
+                </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="row justify-content-center">
+                <div class="col-12 col-sm-6 col-md-3 text-center">
+                    <img src="https://i.pinimg.com/474x/e2/a3/fc/e2a3fc3ce2a581d40c7c137cdbc156cf.jpg" class="img-fluid mb-3" alt="Bertholdt Hoover">
+                    <h4>Bertholdt Hoover</h4>
+                    <p>Pemegang kekuatan Titan Kolosal yang terlibat dalam penyerangan dinding.</p>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 text-center">
+                    <img src="https://i.pinimg.com/474x/77/1e/51/771e5170813445f8d76e5d0bcbc99a10.jpg" class="img-fluid mb-3" alt="Ymir">
+                    <h4>Ymir</h4>
+                    <p>Pemegang kekuatan Titan dan salah satu karakter yang memiliki masa lalu misterius.</p>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 text-center">
+                    <img src="https://i.pinimg.com/474x/b9/e1/d1/b9e1d107b101206463fc7a0803d3307d.jpg" class="img-fluid mb-3" alt="Hange Zoe">
+                    <h4>Hange Zoe</h4>
+                    <p>Kepala ilmuwan Pasukan Pengintai yang sangat antusias dalam meneliti Titan.</p>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 text-center">
+                    <img src="https://i.pinimg.com/474x/05/20/4e/05204ea783de370cd219803a02c755bb.jpg" class="img-fluid mb-3" alt="Sasha Blouse">
+                    <h4>Sasha Blouse</h4>
+                    <p>Prajurit yang ahli dalam menggunakan busur, dengan julukan "Gadis Kentang."</p>
+                </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="row justify-content-center">
+                <div class="col-12 col-sm-6 col-md-3 text-center">
+                    <img src="https://i.pinimg.com/474x/46/b2/81/46b2816dd8c4d4837d4997a637fdec2b.jpg" class="img-fluid mb-3" alt="Jean Kirstein">
+                    <h4>Jean Kirstein</h4>
+                    <p>Salah satu pemimpin di Pasukan Pengintai dengan karakter yang pragmatis dan strategis.</p>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 text-center">
+                    <img src="https://i.pinimg.com/474x/89/89/53/8989539525523184e74218b09953516e.jpg" class="img-fluid mb-3" alt="Connie Springer">
+                    <h4>Connie Springer</h4>
+                    <p>Prajurit yang gesit dengan loyalitas yang besar kepada teman-temannya di Pasukan Pengintai.</p>
+                </div>
+                </div>
+            </div>
+
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#characterCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#characterCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        </div>
+    </section> 
+
+    <!-- FEATURES Section -->
+    <section id="features" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Fitur Menarik</h2>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <i class="bi bi-film" style="font-size: 2.5rem; color: #dc3545;"></i> <!-- Ikon merah -->
+                    <h4 class="my-3">Animasi Berkualitas Tinggi</h4>
+                    <p>Seri ini memiliki animasi epik dari studio MAPPA yang memberikan detail luar biasa dalam setiap pertempuran dan adegan dramatis.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="bi bi-exclamation-triangle" style="font-size: 2.5rem; color: #dc3545;"></i> <!-- Ikon merah -->
+                    <h4 class="my-3">Cerita yang Menegangkan</h4>
+                    <p>Penuh dengan twist dan aksi yang mendebarkan, cerita ini akan membawa penonton ke dalam dunia yang penuh misteri dan ketegangan.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="bi bi-people" style="font-size: 2.5rem; color: #dc3545;"></i> <!-- Ikon merah -->
+                    <h4 class="my-3">Karakter yang Mendalam</h4>
+                    <p>Karakter dengan latar belakang cerita yang kuat, yang membuat penonton terhubung secara emosional dan terus mengikuti kisah mereka.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONI Section -->
+    <section id="testimoni" class="py-5 bg-light">
+        <div class="container">
+        <h2 class="text-center mb-4">Apa Kata Penggemar?</h2>
+        <div id="testimoniCarousel" class="carousel slide carousel-dark" data-bs-ride="carousel" data-bs-interval="5000">
+            <div class="carousel-inner">
+            <!-- Testimoni 1 -->
+            <div class="carousel-item active">
+                <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <blockquote class="blockquote">
+                    <p class="mb-4">"Attack on Titan adalah anime yang penuh aksi dan emosional. Setiap episode penuh dengan kejutan dan ketegangan yang membuat saya tidak bisa berhenti menonton!"</p>
+                    <footer class="blockquote-footer">John Doe, Penggemar Anime</footer>
+                    </blockquote>
+                </div>
+                </div>
+            </div>
+            <!-- Testimoni 2 -->
+            <div class="carousel-item">
+                <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <blockquote class="blockquote">
+                    <p class="mb-4">"Visual dan cerita yang luar biasa! Attack on Titan telah mengubah cara saya melihat anime dan sangat menginspirasi."</p>
+                    <footer class="blockquote-footer">Jane Smith, Kritikus Anime</footer>
+                    </blockquote>
+                </div>
+                </div>
+            </div>
+            <!-- Testimoni 3 -->
+            <div class="carousel-item">
+                <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <blockquote class="blockquote">
+                    <p class="mb-4">"Anime terbaik sepanjang masa. Tidak ada yang bisa mengalahkan kualitas cerita dan pengembangan karakter di Attack on Titan."</p>
+                    <footer class="blockquote-footer">Mark Johnson, Penggemar Setia</footer>
+                    </blockquote>
+                </div>
+                </div>
+            </div>
+            </div>
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimoniCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimoniCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        </div>
+    </section>
+  
+    <!-- Form Section -->
+    <section id="contact" class="py-5 bg-secondary text-white">
+        <div class="container">
+        <h2 class="text-center mb-4">Daftar untuk Update Terbaru</h2>
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nama</label>
+                    <input type="text" class="form-control" id="name" placeholder="Masukkan Nama" name="Nama">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Masukkan Email" name="Email">
+                </div>
+                <div class="mb-3">
+                    <label for="number" class="form-label">No. Telepon</label>
+                    <input type="number" name="Telepon" id="number" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Pesan</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Tulis Pesan Anda" name="Pesan"></textarea>
+                </div>
+                    <div class="text-center">
+                    <button type="submit" class="btn btn-light btn-lg" name="Daftar">Daftar Sekarang</button>
+                </div>
+            </form>
+            </div>
+        </div>
+        </div>
+    </section>  
+
+    <!-- FOOTER Section -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <!-- Informasi Hak Cipta -->
+                <div class="col-md-6 mb-3 mb-md-0 text-center text-md-start">
+                    <p class="mb-0">&copy; 2024 Attack on Titan. Created by Muh. Rinaldi Ruslan.</p>
+                </div>
+                
+                <!-- Tautan Sosial Media -->
+                <div class="col-md-6 text-center text-md-end lh-1">
+                    <a href="https://www.instagram.com/rinaldiruslan/" class="text-white me-3" target="_blank" aria-label="Instagram">
+                        <i class="bi bi-instagram" style="font-size: 1.5rem;"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/rinaldiruslan" class="text-white me-3" target="_blank" aria-label="LinkedIn">
+                        <i class="bi bi-linkedin" style="font-size: 1.5rem;"></i>
+                    </a>
+                    <a href="https://www.facebook.com/rinaldi.naldi.5220" class="text-white me-3" target="_blank" aria-label="Facebook">
+                        <i class="bi bi-facebook" style="font-size: 1.5rem;"></i>
+                    </a>
+                    <a href="https://github.com/xebec51" class="text-white me-3" target="_blank" aria-label="GitHub">
+                        <i class="bi bi-github" style="font-size: 1.5rem;"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
