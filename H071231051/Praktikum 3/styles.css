@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+
+body {   
+    font-family: Quicksand, Verdana, Sans-serif;
+    background-color: rgba(93, 55, 151);
+}
+
+
+/* header {
+    font-weight: bold;
+} */
+
+h1, h2, h5{
+    font-weight: bold;
+}
+
+.navbar {
+    background-color: rgba(93, 55, 151);
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 0px 16px;
+	width: 100%;
+    z-index: 1000;
+}
+
+.navbar-brand img{
+    height: 70px;
+}
+
+.hero{
+    height: 100vh;
+}
+
+#menu{
+    background-color: #eeecea;
+    padding-top: 80px;
+}
+
+.row {
+    table-layout: fixed;
+    justify-content: space-between;
+}
+
+.card {
+    margin: 20px 0 40px;
+    height: 480px;
+    width: 330px;
+	text-align: center;
+	border: 0;
+	transition: all 0.5s ease;
+    padding: 0;
+    background-color:rgba(93, 55, 151);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-body {
+    flex-grow: 1;
+}
+
+.card-footer {
+    text-align: center;
+    margin-top: auto;
+}
+
+.card img {
+    margin-top: 10px;
+    width: 170px;
+    height: 250px;
+}
+
+.card:hover {
+    transform: translateY(-1em);
+}
