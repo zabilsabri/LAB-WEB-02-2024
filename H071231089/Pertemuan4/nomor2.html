@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Diskon Super</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .input-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #output {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 4px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Diskon Cacan Shop</h1>
+    <div class="input-group">
+        <label for="priceInput">Harga barang:</label>
+        <input type="number" id="priceInput" placeholder="Misal: 100000" min="0">
+    </div>
+    <div class="input-group">
+        <label for="itemType">Tipe barang:</label>
+        <select id="itemType">
+            <option value="Elektronik">Elektronik</option>
+            <option value="Pakaian">Pakaian</option>
+            <option value="Makanan">Makanan</option>
+            <option value="Perabotan">Perabotan</option>
+            <option value="Lainnya">Lainnya</option>
+        </select>
+    </div>
+    <button onclick="hitungDiskon()">Hitung Diskon</button>
+    <div id="output"></div>
+
+    <script>
+        function hitungDiskon() {
+            let hargaBarang = parseFloat(document.getElementById("priceInput").value);
+            let jenisBarang = document.getElementById("itemType").value;
+            let diskon = 0;
+
+            // Diskon berdasarkan jenis barang
+            switch (jenisBarang) {
+                case "Elektronik":
+                    diskon = 0.10;
+                    break;
+                case "Pakaian":
+                    diskon = 0.20;
+                    break;
+                case "Makanan":
+                    diskon = 0.05;
+                    break;
+                case "Perabotan":
+                    diskon = 0.15;
+                    break;
+                default:
+                    diskon = 0.02;
+            }
+
+            let jumlahDiskon = hargaBarang * diskon;
+            let hargaSetelahDiskon = hargaBarang - jumlahDiskon;
+
+            document.getElementById("output").innerHTML = `
+                <h3>Rincian Diskon:</h3>
+                <p>Harga awal: Rp ${hargaBarang.toLocaleString('id-ID')}</p>
+                <p>Diskon (${jenisBarang}): ${(diskon * 100).toFixed(0)}%</p>
+                <p>Jumlah diskon: Rp ${jumlahDiskon.toLocaleString('id-ID')}</p>
+                <h3>Harga akhir: Rp ${hargaSetelahDiskon.toLocaleString('id-ID')}</h3>
+            `;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chandra Junardi</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- AOS (Animate on Scroll) CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">CACAN</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#quotes">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section with Background Video -->
+<header class="hero" data-aos="fade-up">
+    <div class="video-overlay"></div>
+    <video autoplay muted loop id="heroVideo">
+        <source src="Asset/copy_42B5F428-A474-4B1D-9CAE-85667F5F51FD.MOV" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="container">
+        <h1>Chandra Junardi Tandirerung</h1>
+        <a href="#projects" class="btn btn-outline-light btn-lg">See My Work</a>
+    </div>
+</header>
+
+<!-- About Section -->
+<section id="about" class="about text-center" data-aos="fade-up">
+    <div class="container">
+        <img src="Asset/IMG_0119.JPG" alt="Chandra">
+        <h2>About Me</h2>
+        <p class="lead">I'm a student at Hasanuddin University with a passion for desain grafis, media communication, and creative projects. I love to create digital experiences that engage and inspire.</p>
+        <div class="mt-4">
+            <a href="https://github.com" class="btn btn-dark btn-sm me-2" target="_blank">GitHub</a>
+            <a href="https://linkedin.com" class="btn btn-dark btn-sm" target="_blank">LinkedIn</a>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="projects text-center" data-aos="fade-up">
+    <div class="container">
+        <h2>My Projects</h2>
+        <p class="lead">Here are a few selected projects I've worked on recently. Want to see more? <a href="#contact">Get in touch!</a></p>
+        <div class="row mt-5">
+            <div class="col-md-4">
+                <div class="card project-card">
+                    <img src="Asset/2279bb9a-dedc-4a92-a216-c07f3f026b38.JPG" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">TIM MEDIA ZADRAK</h5>
+                        <p class="card-text">Ini adalah Tim Media dari calon Bupati Tana Toraja.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card project-card">
+                    <img src="Asset/IMG_0117.JPG" class="card-img-top" alt="Project 2">
+                    <div class="card-body">
+                        <h5 class="card-title">BROADCASTER</h5>
+                        <p class="card-text">Operator Live Streaming Natal Mahkamah Agung Sulsel 2024.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card project-card">
+                    <img src="Asset/FullSizeRender.JPG" class="card-img-top" alt="Project 3">
+                    <div class="card-body">
+                        <h5 class="card-title">PELATIHAN MEDIA</h5>
+                        <p class="card-text">Foto bersama kakak pada kegiatan pelatihan media di Jakarta.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonial Section with Carousel -->
+<section id="quotes" class="quote text-center" data-aos="fade-up">
+    <div class="container">
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <h2>QUOTES</h2>
+                    <br>
+                    <footer class="blockquote-footer">Sometimes the heart knows what it wants, but fear keeps the lips sealed.</footer>
+                </div>
+                <div class="carousel-item">
+                    <h2>QUOTES</h2>
+                    <br>
+                    <footer class="blockquote-footer">Liking you feels like a beautiful secret, one that my heart whispers but my voice refuses to speak.</footer>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact text-center" data-aos="fade-up">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <p class="lead">Interested in working together or have any questions? Feel free to reach out via the form below.</p>
+        <form>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Your Name">
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" placeholder="Your Email">
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Chandra Junardi Tandirerung. All rights reserved.</p>
+    <div>
+        <a href="https://facebook.com" class="me-3 text-white" target="_blank">Facebook</a>
+        <a href="https://twitter.com" class="me-3 text-white" target="_blank">Twitter</a>
+        <a href="https://instagram.com" class="text-white" target="_blank">Instagram</a>
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000,
+    });
+</script>
+
+</body>
+</html>
