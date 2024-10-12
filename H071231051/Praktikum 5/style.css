@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.game-container {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.cards-display {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+}
+
+.money-info {
+    margin: 20px;
+}
+
+.actions {
+    margin: 20px;
+}
+
+button {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
