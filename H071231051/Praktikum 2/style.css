@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Quicksand, "Verdana", Sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    height: 65px;
+    width: 100%;
+    background-color: rgb(23, 65, 133);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.containerheader {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.container {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.text-container {
+    max-width: 50%;
+}
+
+.image {
+    max-width: 40%;
+}
+
+.image img {
+    width: 100%;
+    border-radius: 10px; /* Optional: To give a rounded corner effect to the image */
+}
+
+.logo {
+    padding-top: 5px;
+    height: 60px;
+}
+
+.header-left {
+    float: left;
+}
+
+.header-right {
+    float: right;
+    margin-right: -25px;
+}
+
+.header-right a {
+    line-height: 65px;
+    padding: 0 25px;
+    color: white;
+    display: block;
+    float: left;
+    transition: all 0.5s;
+}
+
+.header-right a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.hero {
+    padding: 115px 100px;
+    background-image: url(image/newjeans-bg.jpeg);
+    background-size: cover;
+    background-color: rgba(50, 70, 80, 0.7);
+    background-blend-mode: soft-light;
+    color: white;
+    text-align: justify;
+    margin-top: 65px ;
+    height: 120vh;
+}
+
+.hero h1 {
+    font-size: 45px;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+
+.hero h3 {
+    margin-bottom: 10px;
+}
+.title h2 {
+    text-align: center;
+    font-size: 24px;
+}
+
+.flexbox {
+    margin-bottom: 5% ;
+}
+
+.flexbox p{
+    font-size: 16px;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5%;
+    padding: 0 100px;
+}
+
+.flex-container > div {
+    margin: 0 2%;
+}
+
+.flex-container2 {
+    color: white;
+    text-align: center;
+    margin: 0 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#about {
+    padding-top: 100px;
+}
+
+#gallery {
+    padding-top: 50px;
+    margin-bottom: 0px;
+    background-image: url(image/bg2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh; 
+}
+
+
+.content {
+    border-radius: 10px;
+    background-color: rgb(23, 65, 133);
+    margin: 10px;
+    padding: 10px;
+    width: 370px;
+    height: 550px;
+    margin-top: 20px;
+}
+
+.content:hover {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.05);
+    transition: all 0.5s;
+}
+
+.content img {
+    border-radius: 10px;
+    width: 350px;
+}
+
+.content h3 {
+    color: white;
+    font-size: 18px;
+}
+
+.content h3:hover {
+    font-size: larger;
+}
+
+footer {
+    background-color: rgb(23, 65, 133);
+    color: white;
+    padding: 0px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+}
+
+.footer-left img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.footer-left p {
+    font-size: 18px;
+    margin: 0px;
+}
+
+.footer-right {
+    text-align: justify;
+}
+
+.footer-right p {
+    margin: 5px 0;
+}
+
+
+@media (max-width: 768px) {
+    .hero .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-container {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .image {
+        max-width: 80%;
+        margin-top: 20px;
+    }
+
+    .image img {
+        width: 100%;
+    }
+
+    .flex-container {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    
+    .flex-container > div {
+        margin: 20px 0;
+    }
+    
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack Kang</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="actions">
+            <button id="startGame">Start Game</button>
+            <button id="takeCard" disabled>Take a Card</button>
+            <button id="holdCard" disabled>Hold Card</button>
+        </div>
+        <h1>BLACKJACK KANG</h1>
+        <div>
+            <div class="status">
+                <div class="status-sums">
+                    <h2>Bot Sums</h2>
+                    <p class="botSums">0</p>
+                </div>
+                <div class="cards">
+                    <div>
+                        <h3>Bot Cards:</h3>
+                        <div class="botCards cards-display">
+                            <img class="hidden-card" src="assets/cards/BACK.png" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Your Cards:</h3>
+                        <div class="userCards cards-display">
+                        </div>
+                    </div>
+                </div>
+                <div class="status-sums">
+                    <h2>My Sums</h2>
+                    <p class="userSums">0</p>
+                    <div class="money-info">
+                        <p>Your Money: $ <span id="userMoney">5000</span></p>
+                        <label for="bet">Place Your Bet:</label>
+                        <input type="number" id="bet" min="100" step="100" value="100">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
