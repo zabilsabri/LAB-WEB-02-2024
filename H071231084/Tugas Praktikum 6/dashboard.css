@@ -1,0 +1,112 @@
+/* <?php if (isset($error)): ?>
+    <div class="error-message"><?php echo $error; ?></div>
+<?php endif; ?> */
+
+body {
+    font-family: Poppins;
+    margin: 0;
+    background: linear-gradient(45deg, #a2d7ff, white);
+    height: 100%;
+    overflow: hidden;
+}
+
+h1, h3 {
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    -webkit-text-stroke: 2px #6597f5;
+    line-height: 1.1;
+}
+
+.user-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #4879f1;
+    line-height: 1;
+    margin: 70px 0 40px 100px;
+    gap: 40px;
+}
+
+.user-container img {
+    width: 550px;
+}
+
+.admin-header {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.admin-header img {
+    width: 220px;
+}
+
+.user-profile-list {
+    padding: 30px 100px;
+    justify-content: start;
+    margin-bottom: 20px;
+}
+
+.user-profile-list h3 {
+    font-size: 50px;
+    -webkit-text-stroke: 1px #6597f5;
+    padding-bottom: 10px;
+}
+
+.button-logout{
+    margin-top: 50px;
+    color: white;
+    background-color: #4879f1;
+    text-decoration: none;
+    width: 200px;
+    padding: 7px 50px;
+    margin-top: 7px;
+    font-size: 18px;
+    border: none;
+    border-radius: 20px;
+    box-sizing: border-box;
+    font-family: Poppins;
+    font-weight: bold;
+}
+
+
+.profile {
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.profile-title {
+    font-weight: bold;
+}
+
+.table-container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+table {
+    width: 100%;
+    padding-bottom: 1rem;
+}
+
+.table-striped thead {
+    background-color: white;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {    
+    background-color: #fbffdd;
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+    background-color: white;
+}
+
+th, td {
+    padding: 10px;
+}

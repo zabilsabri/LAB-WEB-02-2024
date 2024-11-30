@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chill Kill Album</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    html, body {
+      font-family: 'Playfair Display';
+      color: #ffffff;
+      background: linear-gradient(45deg, #000000, #3d0b0d, #000000);
+    }
+
+    .section {
+      scroll-margin-top: 100px;
+    }
+
+    .carousel-item img {
+      height: 550px;
+      object-fit: cover;
+      border-radius: 15px;
+    }
+
+    .carousel-container {
+      box-shadow: 0 0px 20px rgba(255, 255, 255, 0.4);
+      border-radius: 15px;
+    }
+
+    .wrapper {
+      margin-top: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card-container {
+      width: 65%;
+    }
+
+    .card {
+      border-radius: 15px;
+      background-color: #97191d;
+      box-shadow: 0 0px 20px rgba(151, 25, 29, 0.5);
+      color: white;
+      height: 350px;
+      width: 250px;
+    }
+
+    .card img {
+      border-radius: 15px;
+      height: 300px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #97191d;">
+    <div class="container">
+      <a class="navbar-brand">Chill Kill</a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#members">Members</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#order">Order</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="section text-center p-5" id="home">
+    <div class="mb-5">
+      <h1>Chill Kill by Red Velvet</h1>
+      <h4>Chill Your Soul, Kill the Silence</h4>
+      <a href="https://www.youtube.com/watch?v=xlyrt5eAtKI">
+        <button type="button" class="btn text-white fw-bold mt-3 px-4 py-2" style="background-color: #97191d">Stream Now</button>
+      </a>
+    </div>
+    <div class="carousel-container">
+      <div id="chillKillCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="sources/grup1.jpg" class="d-block w-100" alt="Chill Kill Cover">
+          </div>
+          <div class="carousel-item">
+            <img src="sources/grup2.jpg" class="d-block w-100" alt="Group 1">
+          </div>
+          <div class="carousel-item">
+            <img src="sources/grup3.jpg" class="d-block w-100" alt="Group 2">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#chillKillCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#chillKillCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container my-5 p-4 section" id="about">
+    <h2 class="text-center mb-4">About Chill Kill</h2>
+    <p style="text-align: justify;">
+      Chill Kill is the latest album from the talented group Red Velvet,
+      reflecting their distinctive blend of catchy melodies and poignant lyrics.
+      This album marks a significant milestone in the group's artistic evolution,
+      showcasing their versatility and depth as musicians. Each song encapsulates
+      a unique narrative, drawing listeners into a world where emotions run deep
+      and every beat resonates with authenticity. With its rich production and
+      captivating vocals, Chill Kill promises to be an unforgettable auditory
+      experience that highlights Red Velvet's growth and creative expression.
+    </p>
+    <p style="text-align: justify;">
+      The track listing includes standout songs such as Chill Kill,
+      Knock Knock (Who's There?), Underwater, Will I Ever See You Again?,
+      Nightmare, Iced Coffee, One Kiss, Bulldozer, Wings, and Scenery.
+      Each track presents a unique sound and theme, highlighting the individual
+      strengths of the members while maintaining a cohesive vibe throughout the album.
+    </p>
+  </div>
+
+
+  <div class="wrapper section" id="members">
+    <div class="card-container my-4">
+      <div class="row justify-content-center mb-3">
+        <div class="col-lg-4 col-md-6 mb-3">
+          <div class="d-flex flex-column align-items-start">
+            <h1 class="text-start">Members Highlights</h1><br>
+            <h5 class="text-start">Discover the unique talents of each member behind the 'Chill Kill' album.
+              From captivating vocals to stunning performances, each artist brings a
+              special flair to the music!</h5>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-3">
+          <div class="card text-center">
+            <img src="sources/joy.jpg" class="card-img-top" alt="Joy">
+            <div class="card-body">
+              <p class="card-text">Joy</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-3">
+          <div class="card text-center">
+            <img src="sources/irene.jpg" class="card-img-top" alt="Irene">
+            <div class="card-body"> 
+              <p class="card-text">Irene</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-4 col-md-6 mb-3">
+          <div class="card text-center">
+            <img src="sources/yeri.jpg" class="card-img-top" alt="Yeri">
+            <div class="card-body">
+              <p class="card-text">Yeri</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-3">
+          <div class="card text-center">
+            <img src="sources/wendy.jpg" class="card-img-top" alt="Wendy">
+            <div class="card-body">
+              <p class="card-text">Wendy</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-3">
+          <div class="card text-center">
+            <img src="sources/seulgi.jpg" class="card-img-top" alt="Seulgi">
+            <div class="card-body">
+              <p class="card-text">Seulgi</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container my-5 section" id="order">
+    <h2 class="text-center">Get Your Copy of Chill Kill</h2>
+    <p class="text-center mb-4">Don’t miss out on this incredible album. Fill in the form below to order now and
+      experience the unique sounds of Red Velvet!</p>
+    <form>
+      <div class="mb-3">
+        <label for="name" class="form-label">Your Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email Address</label>
+        <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+      </div>
+      <div class="mb-3">
+        <label for="quantity" class="form-label">Quantity</label>
+        <input type="number" class="form-control" id="quantity" min="1" placeholder="1" required>
+      </div>
+      <div class="mb-3">
+        <label for="address" class="form-label">Shipping Address</label>
+        <input type="text" class="form-control" id="address" placeholder="Your Address" required>
+      </div>
+      <button type="submit" class="mt-2 btn btn-danger" style="background-color: #97191d;">Order Now</button>
+    </form>
+  </div>
+
+  <footer style="background-color: #97191d;" id="contact">
+    <div class="container d-flex justify-content-between align-items-center py-4">
+      <div class="text-start">
+        <h5 class="mb-0">Red Velvet's Official Social Media</h5>
+        <p class="mb-0">
+          Instagram <a href="https://www.instagram.com/redvelvet.smtown/?hl=en"
+            class="text-white me-3">@redvelvet.smtown</a>
+          X <a href="https://x.com/rvsmtown?lang=en" class="text-white">@RVsmtown</a>
+        </p>
+      </div>
+      <p class="mb-0">&copy; 2024 Chill Kill. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
