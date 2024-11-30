@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Praktikum 4</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body class="bg-light text-dark">
+
+    <header class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1">Lab Pemrograman Web Sistem Informasi Universitas Hasanuddin</span>
+        </div>
+    </header>
+
+    <div class="container mt-5">
+        <div class="text-center mb-4">
+            <h2 class="text-primary">Tugas Praktikum ke-4</h2>
+            <p class="text-muted">Hasil pengerjaan tugas praktikum ke-4. Jalankan setiap program sesuai instruksi.</p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-5">
+                <div class="card h-100 shadow-sm border-0 d-flex flex-column">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="card-title">Nomor 1</h5>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h6>Hitung Jumlah Angka Genap</h6>
+                        <p class="card-text">
+                            Program ini akan menghitung berapa banyak angka genap yang terdapat dalam rentang dua angka yang Anda masukkan. Rentang tersebut termasuk angka awal dan akhir, jika angka tersebut genap.
+                        </p>
+                        <div class="mt-auto">
+                            <button onclick="nomor1()" class="btn btn-outline-primary w-100">Tekan</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-5">
+                <div class="card h-100 shadow-sm border-0 d-flex flex-column">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="card-title">Nomor 2</h5>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h6>Hitung Harga Barang Setelah Diskon</h6>
+                        <p class="card-text">
+                            Program ini menghitung harga akhir barang setelah diskon. Diskon berdasarkan jenis barang:
+                            Elektronik (10%), Pakaian (20%), Makanan (5%), dan Lainnya (tanpa diskon). Masukkan harga dan jenis barang, lalu program akan menampilkan harga awal, diskon, dan harga akhir.
+                        </p>
+                        <div class="mt-auto">
+                            <button onclick="nomor2()" class="btn btn-outline-primary w-100">Tekan</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-4 mt-3 justify-content-center">
+            <div class="col-md-5">
+                <div class="card h-100 shadow-sm border-0 d-flex flex-column">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="card-title">Nomor 3</h5>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h6>Prediksi Hari di Masa Depan</h6>
+                        <p class="card-text">
+                            Program ini memprediksi hari yang akan datang setelah sejumlah hari tertentu dari hari ini. Masukkan hari awal dan jumlah hari yang diinginkan.
+                        </p>
+                        <div class="mt-auto">
+                            <button onclick="nomor3()" class="btn btn-outline-primary w-100">Tekan</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-5">
+                <div class="card h-100 shadow-sm border-0 d-flex flex-column">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="card-title">Nomor 4</h5>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h6>Permainan Tebak Angka</h6>
+                        <p class="card-text">
+                            Komputer akan memilih angka acak antara 1 dan 100. Tebak angka yang dipilih, dan komputer akan memberi tahu apakah tebakan Anda terlalu tinggi atau rendah hingga Anda menebak angka yang benar.
+                        </p>
+                        <div class="mt-auto">
+                            <button onclick="nomor4()" class="btn btn-outline-primary w-100">Tekan</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-primary text-light py-3 mt-5">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <span>© 2024 Developed by Muh. Rinaldi Ruslan</span>
+            <div class="d-flex">
+                <a href="https://www.instagram.com/rinaldiruslan/" class="text-light me-3" style="text-decoration: none;">
+                    <i class="bi bi-instagram" style="font-size: 1.5rem;"></i>
+                </a>
+                <a href="https://linkedin.com/in/rinaldiruslan" class="text-light me-3" style="text-decoration: none;">
+                    <i class="bi bi-linkedin" style="font-size: 1.5rem;"></i>
+                </a>
+                <a href="https://www.facebook.com/rinaldi.naldi.5220" class="text-light me-3" style="text-decoration: none;">
+                    <i class="bi bi-facebook" style="font-size: 1.5rem;"></i>
+                </a>
+                <a href="https://github.com/xebec51" class="text-light" style="text-decoration: none;">
+                    <i class="bi bi-github" style="font-size: 1.5rem;"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="TP4_1_H071231074.js"></script>
+    <script src="TP4_2_H071231074.js"></script>
+    <script src="TP4_3_H071231074.js"></script>
+    <script src="TP4_4_H071231074.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
